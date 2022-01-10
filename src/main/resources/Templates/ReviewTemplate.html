@@ -1,0 +1,35 @@
+
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title th:text="${reviewModel.title}">Title</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<div class="container">
+
+    <header class="page-header">
+        <h1 th:text="${reviewModel.title}">Review</h1>
+    </header>
+    <figure class="image">
+        <img class="image-size" th:src="${reviewModel.image}" alt="Picture of Drumsticks">
+    </figure>
+
+    <div class="category">
+        <h3 th:text="${reviewModel.reviewCategory}"></h3>
+    </div>
+
+    <section class="review">
+        <p th:text="${reviewModel.content}">Content</p>
+    </section>
+</div>
+<div>
+    <nav class="nav"><a href="/reviews">Back to Reviews</a></nav>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+* {
+    background-color: orange;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: Georgia, Times;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    border: 5px solid;
+    border-radius: .5rem;
+    transition: .1s;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 100%;
+
+}
+
+.page-header {
+    text-align: center;
+}
+
+.landing {
+  margin: 10rem 20rem 8rem 20rem;
+  font-weight: bolder;
+  font-size: 1.5rem;
+}
+
+ul{
+  list-style-type: none;
+}
+
+li {
+  margin: 2em;
+  text-align: center;
+}
+
+.review-title{
+    margin: 1.5rem;
+    padding: 1.5rem;
+}
+
+.navigation{
+  text-align: center;
+  font-weight: bolder;
+  font-size: 12rem;
+  align-items: center;
+  object-fit: cover;
+  margin: 2 rem;
+}
+.nav{
+  text-align: center;
+}
+
+.category{
+    margin: .5rem;
+    padding: .5rem;
+}
+
+img{
+    align-items: center;
+    margin: 1rem;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px 10px black;
+}
+
+.image-size{
+  aspect-ratio: 4 / 4;
+  object-fit: cover;
+  max-width: 30rem;
+  border-radius: 5%;
+}
+
+.review{
+    margin: .5rem;
+    max-width: 40%;
+}
+
+
+.footer {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    padding: 10px 10px 0px 10px;
+    bottom: 0;
+    margin: .5rem;
+}
