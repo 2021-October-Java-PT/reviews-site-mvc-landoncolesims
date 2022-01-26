@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>All Reviews</title>
+</head>
+
+<body>
+<div class="container">
+
+    <header class="page-header">
+        <h1>Drum Sticks</h1>
+    </header>
+
+    <main>
+        <ul class="lists">
+            <li th:each="review: ${reviewsModel}"><a th:href="@{/review(id=${review.id})}"
+                                                     th:text="${review.title}"></a></li>
+        </ul>
+    </main>
+
+    <div>
+        <nav class="nav"><a href="/">Home Page</a></nav>
+    </div>
+
+
+    <footer class="footer">
+        <small>Landon Sims Sticks Review Company</small>
+    </footer>
+</div>
+</body>
+
+</html>
